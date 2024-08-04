@@ -67,7 +67,7 @@ nav {
 
 
 
-.tags {
+.tags{
       background-color: #149f39;
       color: white;
       padding: 5px 10px;
@@ -131,7 +131,18 @@ button:hover {
       border: solid 1px grey;
       margin: 10px 0px 10px 0px;
 }
+.menu{
+      display: flex;
+      flex-direction: column;
+      gap:70px;
+      margin: 50px 0;
+      align-items: center;
+      justify-content: center;
 
+}
+.manu.tags{
+      align-self: center;
+}f
 
 
 
