@@ -11,28 +11,6 @@ body {
       
 }
 
-.navigation {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-}
-
-nav {
-      height: 5vw;
-      box-shadow: 5px 5px 5px 5px #ffc866;
-      position: sticky;
-      top: 0.1vw;
-      margin-bottom: 5vw;
-      background-color: white;
-
-}
-
-.logo {
-      height: 4.5vw;
-      border-radius: 50%;
-      border-style: hidden;
-
-}
 
 /* here section code start feom here*/
 
