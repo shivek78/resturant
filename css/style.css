@@ -1,196 +1,164 @@
+/* Reset Padding and Margin */
 * {
-      padding: 0%;
-      margin: 0%;
+      padding: 0;
+      margin: 0;
       text-transform: capitalize;
-}
-
-html,
-body {
-      line-height: 1.4vw;
-      font-weight: 300vw;
+  }
+  
+  /* Body Styling */
+  body {
+      line-height: 1.4;
+      font-weight: 300;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+  }
+  
+  /* Container for Logo and Menu */
+  .containers { /* Ensure consistent class usage */
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: relative; /* Added missing semicolon */
+      width: 97%;
+  }
+  
+  /* Logo Section */
+  .logo {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+  }
+  
+  .img {
+      border-radius: 20px;
+  }
+  
+  .logo h1 {
+      padding: 40px;
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* Navigation Menu */
+  .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  
+  .menu ul li {
+      margin: 0 15px;
+  }
+  
+  .menu ul li a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: black;
+      font-size: 18px;
+  }
+  
+  .menu ul li a:hover {
+      color: #ff6347; /* Tomato color for hover effect */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+      .containers {
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .menu ul {
+          flex-direction: column;
+      }
+  
+      .menu ul li {
+          margin: 10px 0;
+      }
+  }
+  
+  /* Box-icon Styling */
+  box-icon {
+      padding-right: 10px;
+      height: 20px; /* Corrected the typo */
+      text-shadow: 2px 2px 5px #ff6347; /* Adjusted to use a valid value for text-shadow */
+  }
+  
+  /* Container and Hero Section */
+.container {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .hero {
       
-}
-
-
-/* here section code start feom here*/
-
-
-.hero {
-      display: flex;
-      justify-content: center;
-      gap: 110px;
-
-
-}
-
-.hero_contant {
-      display: flex;
-      flex-direction: column;
-      box-shadow: 5px 5px 5px 5px #423f3ad3;
-}
-
-.hero_contant:hover {
-      display: flex;
-      flex-direction: column;
-      box-shadow: 5px 3px 3px #e29912d3;
-      height: 300px;
-
-      align-self: flex-start;
-      font-weight: 300px;
-      transition: 3s ease-in-out;
-      line-height: 1.5;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-
-
-.tags{
-      background-color: #149f39;
-      color: white;
-      padding: 5px 10px;
-      align-self: flex-start;
-}
-
-.hero_contant h1 {
-      font-size: 50px;
-      font-weight: 300px;
-      margin: 2px;
-
-      line-height: 1.3;
-}
-
-
-button {
-      padding: 10px 15px;
-      border: none;
-      transition: 0.2s ease-in-out;
-      line-height: 1.5;
-}
-
-button:hover {
-      opacity: 0.8;
-      transition: 0.2s ease-in-out;
-      color: green;
-      ;
-}
-
-.hero_img {
+      /* Add any specific styles for the hero section here */
+  }
+  
+  .hero_img {
+      border-radius: 20%; 
+      box-shadow: 2px 2px 2px 2px #080808
+  }
+  
+  .hero_content {
+      padding-left: 20px;
       height: auto;
-      width: auto;
-
-}
-
-.explore_btn {
-      background-color: #ffc866;
-      align-self: flex-start;
-
-}
-.offers{
+      display: flex;
+      flex-direction: column;
+      font-size: 23px; /* Changed to a specific property */
+      box-shadow: 2px 5px 10px #0e100b;
+  }
+  
+  .hero_content:hover {
+      /* Add any hover effect for hero_content if needed */
+  }
+  
+  /* Tags Styling */
+  .tags {
+     color: antiquewhite;
+      background-color: black
+  }
+  
+  /* Button Styling */
+  button {
+     margin-left: 50%;
+      margin-top: 80px;
+      align-items: center;
+      background-color: #0e100b;
+      color: aliceblue;
+      height: 50px;
+      width: 200px;
+      border-radius: 30%;
+      border: none; /* Consider adding this for better button styling */
+  }
+  
+  button:hover {
+      background-color: #ff6347; /* Example of hover effect */
+      cursor: pointer;
+  }
+  
+ 
+  
+  /* Offers Section */
+  .offers {
       display: flex;
       justify-content: center;
       gap: 20px;
       margin-top: 100px;
       margin-bottom: 50px;
       padding: 20px;
-      
-}
-.offer{
-      display: flex; 
+  }
+  
+  .offer {
+      display: flex;
       gap: 20px;
       line-height: 1.2;
-}
-.offer:hover{
-      transition: 2s ease-in-out;
-      box-shadow: 5px 5px 5px gray;
-
-}
-.devider{
-      border: solid 1px grey;
-      margin: 10px 0px 10px 0px;
-}
-.menu{
-      display: flex;
-      flex-direction: column;
-      gap:70px;
-      margin: 50px 0;
-      align-items: center;
-      justify-content: center;
-
-}
-.manu.tags{
-      align-self: center;
-}f
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:786px) {
-      .hero {
-            flex-direction: column;
-
-            .hero_img {
-                  display: flex;
-                  justify-content: center;
-            }
-
-            .hero_img img {
-                  width: 90%;
-            }
-
-            .hero_contant {
-                  gap: 10px;
-                  padding: 10px 15px;
-
-                  .hero_contant h1 {
-                        font-size: 32px;
-                  }
-            }
-
-      }
-}
+  }
+  .divider{
+      border: 3px solid black;
+  }
