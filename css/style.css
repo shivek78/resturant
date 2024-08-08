@@ -160,5 +160,14 @@
       line-height: 1.2;
   }
   .divider{
-      border: 3px solid black;
+      border: solid 1px red;
+
+
+height: 2px;
+  }
+  .menu_section{
+
+  }
+  .menu{
+      
   }
