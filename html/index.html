@@ -7,13 +7,13 @@
     <title>Restaurant</title>
     <meta name="description" content="Welcome to our restaurant, enjoy delicious food with amazing offers.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- CSS file attached -->
     <link rel="stylesheet" href="/css/style.css">
-    
+
     <!-- Boxicons CSS file -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    
+
     <!-- Navbar starts here -->
     <header>
         <nav>
@@ -32,22 +32,22 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#"><box-icon type='solid' name='home'></box-icon> Home</a></li>
-                        <li><a href="#"><box-icon type='solid' name='food-menu'></box-icon> Food Menu</a></li>
-                        <li><a href="#"><box-icon type='solid' name='bed'></box-icon> Room</a></li>
-                        <li><a href="#"><box-icon name='male'></box-icon> Complaints</a></li>
+                        <li><a href="#home"><box-icon type='solid' name='home'></box-icon> Home</a></li>
+                        <li><a href="#book-food"><box-icon type='solid' name='food-menu'></box-icon> Food Menu</a></li>
+                        <li><a href="#rooms"><box-icon type='solid' name='bed'></box-icon> Book Room</a></li>
+                        <li><a href="https://github.com/shivek78/shivek78/blob/main/SHIVEK%20YADAV"><box-icon name='male'></box-icon> about me</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- Navbar ends here -->
-    
+
     <!-- Hero section starts here -->
-    <div class="container">
+    <div class="container" id="home">
         <div class="hero">
             <div class="hero_img">
-                <img src="/image/OIP.jpeg" alt="image">
+                <img src="/image/OIP.jpeg" alt="image" id="image1">
             </div>
         </div>
 
@@ -61,10 +61,11 @@
             </h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis error.</p>
             <a href="#"><button class="explore_btn">Explore Now</button></a>
+            <a href="#book-food"><button class="explore_btn">Book Food</button></a>
         </div>
     </div>
     <!-- Hero section ends here -->
-    
+
     <!-- Offers section starts here -------------------------------->
     <section class="offers">
         <div class="offer">
@@ -94,37 +95,97 @@
     <div class="divider"></div>
 
     <!-- Menu section starts here -->
-    <section class="menu-section">
+    <section class="menu-section" id="book-food">
         <div class="menus">
             <div class="option">Menu</div>
             <h1>Explore Our Menu</h1>
         </div>
         <div class="divider"></div>
+
         <div class="grid">
             <div class="item1">
                 <img src="/image/grid_image1.png" alt="image1">
+                <a href="#"><button class="button1">Order Now</button></a>
             </div>
             <div class="item2">
                 <img src="/image/grid_image2.png" alt="image2">
+                <a href="#"><button class="button1">Order Now</button></a>
             </div>
             <div class="item3">
                 <img src="/image/grid_image3.png" alt="image3">
+                <a href="#"><button class="button1">Order Now</button></a>
             </div>
             <div class="item4">
                 <img src="/image/grid_image4.png" alt="image4">
+                <a href="#"><button class="button1">Order Now</button></a>
             </div>
             <div class="item5">
-                <img src="/image/grid_image5.png" alt="image5">
+                <img src="/image/grid_image5.png" alt="image5"> 
+                <a href="#"><button class="button1">Order Now</button></a>
             </div>
             <div class="item6">
-                <img src="/image/grid_image6.png" alt="image6">
-            </div>
-            <div class="item7">
-                <img src="/image/grid_image7.png" alt="image7">
+                <img src="/image/grid_image6.png" alt="image6"> 
+                <a href="#"><button class="button1">Order Now</button></a>
             </div>
         </div>
     </section>
     <!-- Menu section ends here -->
+
+    <!-- Book Room section starts here -->
+    <section class="book-room" id="rooms">
+        <div class="room-booking">
+            <h1>Book Your Stay</h1>
+            <p>Experience luxury and comfort at our restaurant's exclusive rooms. Book your stay with us now!</p>
+            <a href="/image/room.jpg"><button class="book-room-btn">Book a Room</button></a>
+        </div>
+        <div class="room-img">
+            <img src="/image/rooms.jpg.jpg" alt="Room Image" height="400px"width="400px">
+        </div>
+    </section>
+    <!-- Book Room section ends here -->
+
+    <!-- Footer starts here -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/image/logo.jpeg" alt="logo" width="50px">
+                <h2>Restaurant</h2>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+    
+                        <li><a href="#home"><box-icon type='solid' name='home'></box-icon> Home</a></li>
+                        <li><a href="#book-food"><box-icon type='solid' name='food-menu'></box-icon> Food Menu</a></li>
+                        <li><a href="#rooms"><box-icon type='solid' name='bed'></box-icon> Book Room</a></li>
+                        <li><a href="https://github.com/shivek78/shivek78/blob/main/SHIVEK%20YADAV"><box-icon name='male'></box-icon> about me</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Restaurant St, Food City, FL 12345</p>
+                <p>Email: shivekyadav0786@gmail.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/shivek_ydv/"><box-icon name='twitter' type='logo' color="white" size="40px"></box-icon></a>
+                    <a href="https://www.instagram.com/shivek_ydv/"><box-icon name='instagram' type='logo' color="white" size="40px"></box-icon></a>
+                    <a href="https://www.linkedin.com/in/shivek-yadav/"><box-icon name='linkedin' type='logo' color="white" size="40px"></box-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
 
     <!-- Scripts -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
